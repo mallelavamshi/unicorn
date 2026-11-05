@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Unicorn brand -->
+    <color name="unicorn_icon_background">#FFFFFF</color>
+    <color name="unicorn_purple">#7430A4</color>
+    <color name="unicorn_purple_light">#9B5DE5</color>
+    <color name="unicorn_violet">#5B5BD6</color>
+</resources>

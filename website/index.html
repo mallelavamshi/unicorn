@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unicorn: a little magic in everything you type</title>
+  <meta name="description" content="Unicorn fixes the text before you send it, writes the reply you're stuck on, and remembers what you ask AI, on your phone. Free on Android.">
+  <meta property="og:title" content="Unicorn: a little magic in everything you type">
+  <meta property="og:description" content="Better texts in every app, your AI questions remembered on your phone, and playful hunches about what your town is asking today.">
+  <meta property="og:image" content="/assets/apple-touch-icon.png">
+  <link rel="icon" href="/assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="top wrap">
+    <a class="brand" href="/"><img src="/assets/unicorn.png" alt="" width="34" height="32">Unicorn</a>
+    <nav aria-label="Main">
+      <a href="/blog/">Blog</a>
+      <a href="/privacy/">Privacy</a>
+      <a class="pill" href="#join">Get early access</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div>
+        <h1>A little magic in everything you type.</h1>
+        <p class="lede">Unicorn fixes the text before you send it, writes the reply you're stuck on, and remembers what you ask AI, all on your phone. It works in every app, right above your keys.</p>
+        <form class="signup" data-signup novalidate>
+          <label class="visually-hidden" for="email-top">Email</label>
+          <input id="email-top" type="email" name="email" placeholder="you@email.com" autocomplete="email" required>
+          <button type="submit">Get early access</button>
+          <div class="platforms" role="radiogroup" aria-label="Your phone">
+            <label><input type="radio" name="platform" value="android" checked> I'm on Android</label>
+            <label><input type="radio" name="platform" value="iphone"> I'm on iPhone</label>
+          </div>
+          <p class="form-note" aria-live="polite">Free on Android. iPhone is next on the list.</p>
+        </form>
+      </div>
+
+      <aside class="sky" aria-labelledby="sky-title">
+        <img class="glyph" src="/assets/unicorn-white.png" alt="">
+        <p class="sky-kicker">Live right now</p>
+        <h2 id="sky-title" data-sky-title>Probably on your town's mind</h2>
+        <p class="why-note">Unicorn's playful guesses from today's weather, the calendar and where you are. In the app, real trends replace them as people near you share.</p>
+        <ul class="hunches" data-hunches>
+          <li><span class="emoji">🦃</span><span class="text">People are asking how big a turkey feeds 10 people</span><span class="because">Thanksgiving is coming up</span></li>
+          <li><span class="emoji">🌚</span><span class="text">Everyone is asking why it's dark at 5 pm already</span><span class="because">The clocks went back this week</span></li>
+          <li><span class="emoji">☕</span><span class="text">People are asking which coffee spot has the shortest line this morning</span><span class="because">It's a weekday morning</span></li>
+          <li><span class="emoji">🏈</span><span class="text">People are asking where to watch the game tonight</span><span class="because">Football season</span></li>
+        </ul>
+        <p class="sky-credits" data-credits></p>
+      </aside>
+    </section>
+
+    <section class="feature wrap" aria-labelledby="fix-title">
+      <div class="copy">
+        <h2 id="fix-title">Fix it before you send it.</h2>
+        <p>Type the way you text. Tap a tone and Unicorn rewrites it in place, in Messages, WhatsApp, Gmail, Instagram or anywhere else you type.</p>
+        <ul class="commands">
+          <li><code>/reply</code> answers the last message you got, in your voice.</li>
+          <li><code>/email</code> turns a messy thought into a finished email.</li>
+          <li><code>/translate</code> does Spanish, French and twenty more.</li>
+        </ul>
+      </div>
+      <div class="phone" data-rewrite>
+        <p class="bubble mine">hey sry cant make it tmrw nite, smthing came up at wrk. can we do sat instead??</p>
+        <p class="bubble fixed" data-rewrite-out aria-live="polite">Hi! I'm so sorry, but I can't make it tomorrow night. Something came up at work. Could we do Saturday instead?</p>
+        <div class="tones" role="group" aria-label="Pick a tone">
+          <button type="button" aria-pressed="true" data-tone="polite">🙏 Polite</button>
+          <button type="button" aria-pressed="false" data-tone="funny">😂 Funny</button>
+          <button type="button" aria-pressed="false" data-tone="pro">💼 Pro</button>
+          <button type="button" aria-pressed="false" data-tone="short">✂️ Shorter</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature flip wrap" aria-labelledby="remember-title">
+      <div class="copy">
+        <h2 id="remember-title">Never lose a good question again.</h2>
+        <p>Everything you ask ChatGPT, Gemini, Claude or Perplexity is saved on your phone, so you can find it later, see what you've been curious about this week, and pick up where you left off. Unicorn even suggests your earlier answer when you start asking the same thing twice.</p>
+      </div>
+      <div class="rings-card" role="img" aria-label="Example: 42 questions this week, a 4 day streak, 9 topics explored">
+        <div class="rings" aria-hidden="true">
+          <span class="ring a"></span><span class="ring b"></span><span class="ring c"></span>
+        </div>
+        <ul class="legend" aria-hidden="true">
+          <li><span class="dot" style="background:var(--violet)"></span><b>42</b>questions this week</li>
+          <li><span class="dot" style="background:var(--gold)"></span><b>4</b>day streak</li>
+          <li><span class="dot" style="background:#2bb39a"></span><b>9</b>topics explored</li>
+          <li class="caption">An example week in the app</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="feature wrap" aria-labelledby="near-title">
+      <div class="copy">
+        <h2 id="near-title">See what your town is asking.</h2>
+        <p>It works both ways, like read receipts. Share what you ask AI, anonymously, and see what people near you ask. Only topics and short common questions are shared, never your conversations, and a trend appears only once 25 different people share it.</p>
+      </div>
+      <div class="peek">
+        <h3>What people near you ask AI</h3>
+        <ol>
+          <li>best pediatric urgent care open on sunday</li>
+          <li class="blur" aria-hidden="true">how early should i book thanksgiving flights</li>
+          <li class="blur" aria-hidden="true">is it worth replacing a 10 year old water heater</li>
+          <li class="blur" aria-hidden="true">cheap date ideas this weekend</li>
+        </ol>
+        <span class="unlock">Share yours to see all</span>
+        <p class="caption">An example of the Near you screen</p>
+      </div>
+    </section>
+
+    <section class="feature flip wrap" aria-labelledby="hatch-title">
+      <div class="copy">
+        <h2 id="hatch-title">Hatch a Unicorn no one else has.</h2>
+        <p>Everyone who joins hatches their own one-of-a-kind Unicorn, with its own name, number and colors. It grows sparkles, then wings, then an aurora and finally a golden frame as you share. Show it off.</p>
+      </div>
+      <div class="cards" aria-label="A Unicorn card at three levels">
+        <figure class="card one">
+          <span class="num">#2817</span>
+          <svg viewBox="0 0 200 140" aria-hidden="true"><circle cx="100" cy="72" r="40" fill="#fff" fill-opacity=".92"/><image href="/assets/unicorn.png" x="70" y="44" width="60" height="56"/></svg>
+          <figcaption><span class="name">Misty Comet</span><br><span class="level">Level 1, hatchling</span></figcaption>
+        </figure>
+        <figure class="card two">
+          <span class="num">#6150</span>
+          <svg viewBox="0 0 200 140" aria-hidden="true">
+            <path fill="#fff" fill-opacity=".9" d="M128 54 C138 26 162 10 186 14 C184 34 178 52 165 55 C165 68 157 74 151 69 C150 80 142 84 137 77 C134 74 132 72 130 70Z"/>
+            <path fill="#fff" fill-opacity=".9" d="M72 54 C62 26 38 10 14 14 C16 34 22 52 35 55 C35 68 43 74 49 69 C50 80 58 84 63 77 C66 74 68 72 70 70Z"/>
+            <circle cx="100" cy="72" r="40" fill="#fff" fill-opacity=".95"/><image href="/assets/unicorn.png" x="70" y="44" width="60" height="56"/>
+            <path fill="#fff" d="M30 104 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z M172 100 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z"/>
+          </svg>
+          <figcaption><span class="name">Velvet Nova</span><br><span class="level">Level 3, winged</span></figcaption>
+        </figure>
+        <figure class="card three">
+          <span class="num">#4546</span>
+          <svg viewBox="0 0 200 140" aria-hidden="true">
+            <defs><linearGradient id="aurora" x1="0" x2="1"><stop offset="0" stop-color="#7fffd4"/><stop offset=".35" stop-color="#ff8ad8"/><stop offset=".7" stop-color="#ffe27a"/><stop offset="1" stop-color="#8ab4ff"/></linearGradient></defs>
+            <path fill="#fff" fill-opacity=".9" d="M128 54 C138 26 162 10 186 14 C184 34 178 52 165 55 C165 68 157 74 151 69 C150 80 142 84 137 77 C134 74 132 72 130 70Z"/>
+            <path fill="#fff" fill-opacity=".9" d="M72 54 C62 26 38 10 14 14 C16 34 22 52 35 55 C35 68 43 74 49 69 C50 80 58 84 63 77 C66 74 68 72 70 70Z"/>
+            <circle cx="100" cy="72" r="49" fill="none" stroke="url(#aurora)" stroke-width="7" stroke-opacity=".85"/>
+            <circle cx="100" cy="72" r="40" fill="#fff" fill-opacity=".95"/><image href="/assets/unicorn.png" x="70" y="44" width="60" height="56"/>
+            <path fill="#f2c14e" d="M30 104 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z M172 100 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z M100 4 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z"/>
+          </svg>
+          <figcaption><span class="name">Crystal Nova</span><br><span class="level">Level 5, legendary</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="promises wrap" aria-labelledby="promise-title">
+      <h2 id="promise-title" class="section-title">Private by design.</h2>
+      <div class="promise-list">
+        <div>
+          <h3>Your prompts stay on your phone.</h3>
+          <p>Saved questions are never uploaded and aren't included in phone backups. Delete them all with one tap.</p>
+        </div>
+        <div>
+          <h3>Private fields stay private.</h3>
+          <p>In passwords, codes, card numbers and banking apps, Unicorn steps back: no AI, no saving, no learning. Just plain keys.</p>
+        </div>
+        <div>
+          <h3>Locked to your fingerprint.</h3>
+          <p>Turn on the app lock and Unicorn opens only with your fingerprint, face or your phone's screen lock.</p>
+        </div>
+        <div>
+          <h3>Free, with nothing to sign up for.</h3>
+          <p>All of Unicorn works without an account. Sharing trends is off until you turn it on, and you can see exactly what it sends first.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reads wrap" aria-labelledby="reads-title">
+      <h2 id="reads-title" class="section-title">From the blog</h2>
+      <ul class="read-list">
+        <li>
+          <a href="/blog/how-hunches-work/">
+            <div class="art a" aria-hidden="true">🌙</div>
+            <h3>Probably on your town's mind: how Unicorn's hunches work</h3>
+            <p>Weather alerts, the calendar and a little local knowledge, turned into guesses that say they're guesses.</p>
+          </a>
+        </li>
+        <li>
+          <a href="/blog/what-leaves-your-phone/">
+            <div class="art b" aria-hidden="true">🔒</div>
+            <h3>What leaves your phone, and what never does</h3>
+            <p>A plain list of everything Unicorn keeps, shares and refuses to touch.</p>
+          </a>
+        </li>
+        <li>
+          <a href="/blog/things-to-try-with-ask-unicorn/">
+            <div class="art c" aria-hidden="true">✨</div>
+            <h3>Nine things to try with Ask Unicorn this week</h3>
+            <p>From a better "running late" text to a wedding toast, in whatever app you're already in.</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <section class="closer" id="join" aria-labelledby="join-title">
+    <h2 id="join-title">Your Unicorn is waiting to hatch.</h2>
+    <p>Get early access to Unicorn for Android, or a note when the iPhone version is ready.</p>
+    <form class="signup" data-signup novalidate>
+      <label class="visually-hidden" for="email-bottom">Email</label>
+      <input id="email-bottom" type="email" name="email" placeholder="you@email.com" autocomplete="email" required>
+      <button type="submit">Get early access</button>
+      <div class="platforms" role="radiogroup" aria-label="Your phone">
+        <label><input type="radio" name="platform" value="android" checked> I'm on Android</label>
+        <label><input type="radio" name="platform" value="iphone"> I'm on iPhone</label>
+      </div>
+      <p class="form-note" aria-live="polite">One email when it's your turn. No newsletters.</p>
+    </form>
+  </section>
+
+  <footer class="foot wrap">
+    <span>© 2026 Unicorn</span>
+    <nav aria-label="Footer">
+      <a href="/blog/">Blog</a>
+      <a href="/privacy/">Privacy</a>
+    </nav>
+  </footer>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

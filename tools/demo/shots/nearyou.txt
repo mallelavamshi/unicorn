@@ -1,0 +1,12 @@
+# Shots 18-19: Hunches about Austin, then the opt-in for trends near you.
+launch ai.unicorn.app/.MainActivity -f 0x10008000
+sleep 2000
+tap Near you
+sleep 2000
+tap Make hunches about my neighborhood
+wait Probably on 25000
+sleep 3500
+drag 540 1800 540 900 700
+sleep 2500
+drag 540 1900 540 800 700
+sleep 2500

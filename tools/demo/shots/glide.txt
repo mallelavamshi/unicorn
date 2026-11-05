@@ -1,0 +1,8 @@
+# Shot 14: glide typing, with the trail.
+extra thread <what time works for you?
+stage
+sleep 1800
+glide see you at noon
+sleep 1200
+tap ^Send$
+sleep 1500

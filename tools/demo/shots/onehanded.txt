@@ -1,0 +1,12 @@
+# Shot 15b: one-handed, switched to the other side, then back to full width.
+extra thread <how do you type so fast lol
+stage
+sleep 1500
+tap More options
+sleep 900
+tap One-handed
+sleep 2200
+tap Move to the other side
+sleep 2200
+tap Use the full width
+sleep 1500

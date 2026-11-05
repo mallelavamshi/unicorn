@@ -1,0 +1,15 @@
+# Off-camera setup after a data reset: the purple-to-blue "Aurora" key theme (the last one in You > Look).
+launch ai.unicorn.app/.MainActivity -f 0x10008000
+sleep 2000
+tap ^You$
+sleep 1500
+scrollto Classic Dark
+sleep 600
+dragfrom Classic Dark -800 0 400
+sleep 900
+dragfrom Unicorn Night|Midnight -800 0 400
+sleep 900
+dragfrom ^Rose$|^Mint$|^Graphite$ -800 0 400
+sleep 900
+tap ^Aurora$ 8000
+sleep 1500

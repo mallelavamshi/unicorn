@@ -1,0 +1,14 @@
+# Words the emulator glide test swipes. Sections: common, long, double, apostrophe.
+[common]
+the and that have with this from they will would there their what about which when make like time just know
+people into year your good some could them other than then look only come over think also back after work
+first well even want because these give most great where right still find here thing many going little
+world house school today night water money family always never something before really should through
+friend happy dinner coffee phone thanks please tomorrow weekend morning
+[long]
+information understanding communication international responsibility relationship environment experience
+technology particularly everything government
+[double]
+hello letter coffee little address success happy book apple seems better pretty
+[apostrophe]
+don't it's can't I'm

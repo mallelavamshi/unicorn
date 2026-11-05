@@ -1,0 +1,17 @@
+# Shot 11: Maya's message arrives, it's copied, /reply writes the answer from it, and it's sent.
+extra thread <hey!! are we still on for dinner tmrw?|>Hey, sorry, I can't make it tomorrow night. Something came up at work. Could we do Saturday instead?
+extra incoming omg yes!! saturday works. what time?
+extra incomingDelayMs 1500
+stage
+sleep 3200
+longpress omg yes
+sleep 1500
+tap ✨ Ask Unicorn
+sleep 1400
+tapime Reply to copied
+waitime ^(?!.*(Write a natural|Tap ↑|copied|Commands|Ask Unicorn|Replying)).{45,}$ 25000
+sleep 2200
+tapime ^(?!.*(Write a natural|Tap ↑|copied|Commands|Ask Unicorn|Replying)).{45,}$
+sleep 1200
+tap ^Send$
+sleep 2000

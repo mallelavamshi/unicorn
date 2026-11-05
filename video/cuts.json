@@ -1,0 +1,311 @@
+{
+  "_comment": "Clips for the X launch cut (docs/plan/demo-video-x.md), made by tools/demo/cut.py from video/takes/*.webm. Each clip plays its segments [from s, to s, speed] back to back and is cut or held to `frames` (30 fps). Speed > 1 only on typing, gestures and app start-up; AI waits keep about 0.7 s of the real spinner, then cut to the real answer (user decision). Google clips start once the typed words make Google's live suggestions harmless: early letters showed trending news, people and brand logos.",
+  "home": {
+    "take": "firstrun",
+    "frames": 58,
+    "segs": [
+      [
+        2.35,
+        3.75,
+        1
+      ],
+      [
+        7.1,
+        7.75,
+        1
+      ]
+    ]
+  },
+  "setup": {
+    "take": "firstrun",
+    "frames": 58,
+    "segs": [
+      [
+        12.0,
+        13.5,
+        2
+      ],
+      [
+        25.35,
+        26.6,
+        1
+      ]
+    ]
+  },
+  "hatch": {
+    "take": "firstrun",
+    "frames": 116,
+    "segs": [
+      [
+        30.0,
+        34.45,
+        1.15
+      ]
+    ]
+  },
+  "google": {
+    "take": "google",
+    "frames": 116,
+    "segs": [
+      [
+        13.4,
+        18.3,
+        1.8
+      ],
+      [
+        18.3,
+        19.6,
+        1
+      ]
+    ]
+  },
+  "library": {
+    "take": "library",
+    "frames": 73,
+    "segs": [
+      [
+        4.9,
+        7.35,
+        1
+      ]
+    ]
+  },
+  "search": {
+    "take": "library",
+    "frames": 73,
+    "segs": [
+      [
+        7.85,
+        9.1,
+        1
+      ],
+      [
+        11.95,
+        13.6,
+        1
+      ]
+    ]
+  },
+  "recall": {
+    "take": "recall",
+    "frames": 86,
+    "segs": [
+      [
+        10.25,
+        11.0,
+        1.6
+      ],
+      [
+        11.0,
+        13.4,
+        1
+      ]
+    ]
+  },
+  "tone": {
+    "take": "tone",
+    "frames": 87,
+    "segs": [
+      [
+        5.9,
+        6.95,
+        1
+      ],
+      [
+        8.05,
+        9.2,
+        1
+      ],
+      [
+        9.6,
+        9.95,
+        1
+      ],
+      [
+        10.7,
+        11.1,
+        1
+      ]
+    ]
+  },
+  "reply": {
+    "take": "reply",
+    "frames": 87,
+    "segs": [
+      [
+        5.75,
+        6.5,
+        1
+      ],
+      [
+        8.4,
+        8.75,
+        1
+      ],
+      [
+        9.9,
+        10.6,
+        1
+      ],
+      [
+        11.95,
+        12.7,
+        1
+      ],
+      [
+        14.15,
+        14.45,
+        1
+      ],
+      [
+        15.45,
+        15.75,
+        1
+      ]
+    ]
+  },
+  "email": {
+    "take": "email",
+    "frames": 73,
+    "segs": [
+      [
+        7.1,
+        14.3,
+        6.5
+      ],
+      [
+        19.45,
+        20.15,
+        1
+      ],
+      [
+        21.9,
+        22.55,
+        1
+      ]
+    ]
+  },
+  "grammar": {
+    "take": "grammar",
+    "frames": 44,
+    "segs": [
+      [
+        5.75,
+        6.45,
+        1
+      ],
+      [
+        8.25,
+        8.7,
+        1
+      ],
+      [
+        10.5,
+        10.85,
+        1
+      ]
+    ]
+  },
+  "translate": {
+    "take": "translate",
+    "frames": 44,
+    "segs": [
+      [
+        6.1,
+        6.8,
+        1
+      ],
+      [
+        8.4,
+        8.85,
+        1
+      ],
+      [
+        10.5,
+        10.85,
+        1
+      ]
+    ]
+  },
+  "glide": {
+    "take": "glide",
+    "frames": 73,
+    "segs": [
+      [
+        5.2,
+        9.3,
+        1.9
+      ],
+      [
+        10.75,
+        11.2,
+        1
+      ]
+    ]
+  },
+  "resize": {
+    "take": "size",
+    "frames": 29,
+    "segs": [
+      [
+        6.3,
+        10.4,
+        4.2
+      ]
+    ]
+  },
+  "onehanded": {
+    "take": "onehanded",
+    "frames": 28,
+    "segs": [
+      [
+        4.95,
+        6.0,
+        1.1
+      ]
+    ]
+  },
+  "card": {
+    "take": "firstrun",
+    "frames": 87,
+    "segs": [
+      [
+        36.3,
+        39.4,
+        1.4
+      ],
+      [
+        42.25,
+        42.9,
+        1
+      ]
+    ]
+  },
+  "hunches": {
+    "take": "nearyou",
+    "frames": 87,
+    "segs": [
+      [
+        5.6,
+        8.0,
+        1
+      ],
+      [
+        9.3,
+        10.4,
+        1
+      ]
+    ]
+  },
+  "trends": {
+    "take": "nearyou",
+    "frames": 58,
+    "segs": [
+      [
+        13.6,
+        15.6,
+        1
+      ]
+    ]
+  }
+}

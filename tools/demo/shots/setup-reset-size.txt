@@ -1,0 +1,11 @@
+# Off-camera: the keys back to their default size and full width.
+stage
+sleep 1500
+tap More options
+sleep 900
+tap Size and position
+sleep 1500
+tap ^Reset$
+sleep 900
+tap ^Done$
+sleep 1200

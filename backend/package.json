@@ -1,0 +1,24 @@
+{
+  "name": "unicorn-api",
+  "version": "0.1.0",
+  "description": "Unicorn backend: AI writing tools proxy (Claude Haiku), rate limits, consented aggregated trends",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --local --var AI_MOCK:1 --var ALLOW_DEBUG_REGION:1",
+    "deploy": "wrangler deploy",
+    "migrate:local": "wrangler d1 migrations apply unicorn-db --local",
+    "migrate:remote": "wrangler d1 migrations apply unicorn-db --remote",
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "1.3.0",
+    "hono": "^4.13.13",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261018.1",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.151.1"
+  }
+}

@@ -1,0 +1,8 @@
+# Shot 9: back in Google, a similar question brings up Unicorn's earlier-prompt chip.
+#!host am force-stop com.google.android.googlequicksearchbox
+launch com.google.android.googlequicksearchbox/com.google.android.search.core.google.GoogleSearch
+wait Grammar|Ask Unicorn 15000
+sleep 1200
+typeat 140 weekend in austin
+wait earlier prompt 8000
+sleep 3000

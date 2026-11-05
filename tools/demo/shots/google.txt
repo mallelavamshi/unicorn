@@ -1,0 +1,9 @@
+# Shot 6: a demo prompt typed into the real Google app with Unicorn's keys, then searched (Unicorn saves it).
+#!host am force-stop com.google.android.googlequicksearchbox
+launch com.google.android.googlequicksearchbox/com.google.android.search.core.google.GoogleSearch
+wait Grammar|Ask Unicorn 15000
+sleep 1500
+typeat 120 plan a cozy weekend in austin
+sleep 900
+key enter
+sleep 4000

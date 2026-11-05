@@ -1,0 +1,17 @@
+# Shot 12: /email writes an email to the landlord, and it goes into the email body.
+extra email dana@example.com
+stage
+sleep 1500
+tap ✨ Ask Unicorn
+sleep 1200
+tapime Commands
+sleep 900
+tapime /email
+sleep 600
+typeat 110 ask my landlord to fix the heater this week
+sleep 700
+tapime ^Ask$
+waitime (?s)^(?!/email)(?!.*(Write an email|Tap ↑|Commands)).{80,}$ 30000
+sleep 2500
+tapime (?s)^(?!/email)(?!.*(Write an email|Tap ↑|Commands)).{80,}$
+sleep 3000

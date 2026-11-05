@@ -1,0 +1,23 @@
+# Off-camera: more real searches in the Google app, after the hero prompt, so its conversation looks used.
+#!host am force-stop com.google.android.googlequicksearchbox
+launch com.google.android.googlequicksearchbox/com.google.android.search.core.google.GoogleSearch
+wait Grammar|Ask Unicorn 15000
+sleep 1000
+typeat 60 how do i keep basil alive indoors
+sleep 500
+key enter
+sleep 3000
+launch com.google.android.googlequicksearchbox/com.google.android.search.core.google.GoogleSearch
+wait Grammar|Ask Unicorn 15000
+sleep 1000
+typeat 60 easy pasta recipes for two
+sleep 500
+key enter
+sleep 3000
+launch com.google.android.googlequicksearchbox/com.google.android.search.core.google.GoogleSearch
+wait Grammar|Ask Unicorn 15000
+sleep 1000
+typeat 60 explain compound interest simply
+sleep 500
+key enter
+sleep 3000

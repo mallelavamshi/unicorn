@@ -1,0 +1,10 @@
+# Shot 13a: Grammar fixes a sentence.
+extra thread <want to come to the beach with us?
+extra draft their going to the beach tomorow and i think its gonna be fun
+stage
+sleep 1500
+tap Grammar
+wait They're|They are 25000
+sleep 1800
+tap They're|They are
+sleep 2000

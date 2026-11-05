@@ -1,0 +1,16 @@
+{
+  // The website: static files only, served by Cloudflare at unicorn-site.<account>.workers.dev.
+  // Deploy from this folder with `npx wrangler deploy` (the backend has its own config in ../backend).
+  "$schema": "../backend/node_modules/wrangler/config-schema.json",
+  "name": "unicorn-site",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": ".",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  },
+  // No scheduled jobs; an empty list removes any left from an earlier deploy
+  "triggers": { "crons": [] },
+  "workers_dev": true,
+  "preview_urls": false
+}

@@ -1,0 +1,63 @@
+# Shots 2-4 and 17: the home-screen icon, the real first run, the hatch and the share card.
+# Off camera first: a fresh install's state (data cleared), with Unicorn still chosen for typing.
+#!host pm clear ai.unicorn.app
+#!host sleep 5
+#!host ime enable ai.unicorn.app/com.android.inputmethod.latin.LatinIME
+#!host ime set ai.unicorn.app/com.android.inputmethod.latin.LatinIME
+#!host pm grant ai.unicorn.app android.permission.ACCESS_COARSE_LOCATION
+#!host sleep 2
+#!host ime set ai.unicorn.app/com.android.inputmethod.latin.LatinIME
+#!host input keyevent KEYCODE_HOME
+home
+sleep 2000
+tap ^Unicorn$
+wait Get started 15000
+sleep 1800
+tap Get started
+sleep 1500
+tap Skip intro
+wait Turn on Unicorn
+sleep 1800
+tap ^Continue$
+sleep 1500
+wait What should Unicorn call you 15000
+sleep 1200
+tap What should Unicorn call you
+sleep 900
+sleep 600
+typeat 150 alex
+sleep 700
+tap ^Alex$
+sleep 700
+tap Creating content
+sleep 900
+tap ^Continue$
+sleep 1500
+wait Remember my AI prompts 15000
+sleep 1000
+tap Remember my AI prompts
+sleep 1200
+tap ^Continue$
+sleep 1500
+wait Open Unicorn 15000
+sleep 1200
+tap Open Unicorn
+wait has hatched 15000
+sleep 4000
+wait Meet it 15000
+tap Meet it
+sleep 4000
+wait Share my Unicorn 15000
+sleep 1500
+tap Share my Unicorn
+sleep 3500
+back
+sleep 1500
+tap ^Next$
+sleep 1500
+tap Skip the demo|^Next$
+sleep 2500
+wait Let's go 20000
+sleep 1500
+tap Let's go
+sleep 3000

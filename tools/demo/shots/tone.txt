@@ -1,0 +1,12 @@
+# Shot 10: Tone fixes a messy text in the chat, then it's sent
+extra thread <hey!! are we still on for dinner tmrw?
+extra draft hey sry cant make it tmrw nite, smthing came up at wrk. can we do sat instead??
+stage
+sleep 1800
+tap Tone
+wait Saturday 25000
+sleep 1500
+tap Saturday
+sleep 1000
+tap ^Send$
+sleep 1800

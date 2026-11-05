@@ -1,0 +1,18 @@
+Unicorn
+Copyright (C) 2026 Unicorn
+
+This product includes software and data from third parties:
+
+- AOSP LatinIME, the typing engine (app/src/main/java/com/android/inputmethod, app/src/main/jni, and the English
+  dictionary res/raw/main_en.dict). Copyright (C) 2008 The Android Open Source Project. Apache License 2.0; see
+  NOTICE-AOSP-LatinIME.
+
+- Glide typing's next-word table (app/src/main/assets/glide/en_next.bin) is derived from English sentences of
+  Tatoeba (https://tatoeba.org), licensed under Creative Commons Attribution 2.0 France
+  (https://creativecommons.org/licenses/by/2.0/fr/). It holds word-pair statistics, not sentences, and is built by
+  tools/make_glide_bigrams.py.
+
+- Glide typing's decoder (app/src/main/kotlin/ai/unicorn/glide) is Unicorn's own code. Its method follows the
+  published shape-and-location template matching of SHARK2: Per-Ola Kristensson and Shumin Zhai, "SHARK2: A Large
+  Vocabulary Shorthand Writing System for Pen-based Computers", UIST 2004. No code from other gesture typing projects
+  is used.

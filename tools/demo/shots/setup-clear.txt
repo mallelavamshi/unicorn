@@ -1,0 +1,11 @@
+# Off-camera: delete the Google conversation so the hero prompt starts a fresh one.
+launch ai.unicorn.app/.MainActivity -f 0x10008000
+sleep 1500
+tap ^Library$
+sleep 1200
+tap Google Search
+sleep 1500
+tap Delete conversation
+sleep 1000
+tap ^Delete$
+sleep 1200

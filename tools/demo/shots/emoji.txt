@@ -1,0 +1,8 @@
+# Shot 16b: the emoji button and the number row.
+extra thread <SATURDAY!!
+stage
+sleep 1500
+tap [Ee]moji
+sleep 2500
+back
+sleep 1200

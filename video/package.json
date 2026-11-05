@@ -1,0 +1,23 @@
+{
+  "name": "unicorn-video",
+  "private": true,
+  "description": "Unicorn's demo videos, rendered with Remotion. See docs/plan/demo-video-x.md.",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render:x": "remotion render src/index.ts XLaunch out/unicorn-x-launch.mp4 --codec h264 --crf 16",
+    "still": "remotion still src/index.ts XLaunch"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.538",
+    "@remotion/google-fonts": "4.0.538",
+    "@remotion/media": "4.0.538",
+    "@remotion/transitions": "4.0.538",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.538"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.8",
+    "typescript": "5.8.3"
+  }
+}

@@ -1,0 +1,5 @@
+Embedding model: potion-base-8M by Minish Lab (https://huggingface.co/minishlab/potion-base-8M), MIT License.
+Distilled with Model2Vec from BAAI/bge-base-en-v1.5 (MIT License).
+
+Converted to int8 (per-row scale) for on-device use by convert_model2vec.py; the vocabulary in vocab.txt is the
+model's WordPiece tokenizer vocabulary, one token per line in id order.

@@ -1,0 +1,41 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "unicorn-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "unicorn-db",
+      "database_id": "c0a8598a-0ecf-4dc4-81ff-6cd5ad9abb72",
+      "migrations_dir": "migrations"
+    }
+  ],
+  // Weather and town fact sheets for hunches
+  "kv_namespaces": [{ "binding": "CACHE", "id": "34cf2b3e878f4b0ebcd0d87b769b4a51" }],
+  // Purge contributor rows older than the retention window every night
+  "triggers": { "crons": ["17 3 * * *"] },
+  "vars": {
+    // AI tool requests per install per day
+    "DAILY_AI_LIMIT": "150",
+    // All installs together per day: caps the worst-case Anthropic bill (~$0.0001 per request on Haiku 5.5)
+    "DAILY_GLOBAL_AI_LIMIT": "50000",
+    // Per install per day once the day's global use passes 80%, so heavy users can't use up everyone's AI
+    "FAIR_SHARE_AI_LIMIT": "40",
+    // Trend items are only shown once at least this many different people contributed them
+    "TRENDS_MIN_PEOPLE": "25",
+    "SIGNAL_RETENTION_DAYS": "30",
+    "AI_MODEL": "claude-haiku-5-5",
+    // The AI tools run on Meta's Muse model (Meta Model API) first; Claude (AI_MODEL) answers if Meta fails
+    "AI_PROVIDER": "meta",
+    "META_MODEL": "muse-wonder-1.0",
+    "META_API_BASE": "https://api.meta.ai",
+    // New town fact sheets for hunches per day across everyone (each is one Haiku request, cached for two weeks)
+    "DAILY_PACK_LIMIT": "1500",
+    // Website origins that may post to the waitlist (localhost is always allowed for development)
+    "SITE_ORIGINS": "https://unicorn-site.m-vamshikrishna22.workers.dev"
+  }
+  // Secrets (wrangler secret put): ANTHROPIC_API_KEY, META_API_KEY, INSTALL_HASH_SALT
+}

@@ -1,0 +1,14 @@
+# Shot 15a: resize the keys by dragging the edges.
+extra thread <how do you type so fast lol
+stage
+sleep 1500
+tap More options
+sleep 900
+tap Size and position
+sleep 1500
+drag 1056 2140 860 2140 800
+sleep 700
+drag 540 1546 540 1400 700
+sleep 1500
+tap ^Done$
+sleep 2000

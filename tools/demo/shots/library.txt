@@ -1,0 +1,10 @@
+# Shots 7-8: the same phrase in Unicorn's Library, then found by meaning ("vacation" finds it, though the word is not in it).
+launch ai.unicorn.app/.MainActivity -f 0x10008000
+sleep 2500
+tap ^Library$
+wait cozy weekend 10000
+sleep 2500
+tap Search words or meaning
+sleep 1000
+typeat 160 vacation
+sleep 3500

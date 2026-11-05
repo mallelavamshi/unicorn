@@ -1,0 +1,32 @@
+# Build outputs and caches
+build/
+**/build/
+.gradle/
+.kotlin/
+.cxx/
+local.properties
+*.log
+**/node_modules/
+**/.wrangler/
+.dev.vars*
+.env*
+*.jks
+*.keystore
+
+# Release files, raw footage and other large local artifacts
+dist/
+upstream/
+video/takes/
+video/out/
+docs/plan/demo-video/raw/
+
+# Not ours to redistribute: the Mixkit track (its terms don't allow sharing the file) and other makers' app icons
+video/public/music/*.mp3
+video/public/ai/
+
+# Local test fixture that installs a stand-in chat screen under another company's package name
+harness/
+
+# Local tooling state
+.claude/
+.shared.lock

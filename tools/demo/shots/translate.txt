@@ -1,0 +1,11 @@
+# Shot 13b: Translate turns a message into Spanish.
+extra name Sofía
+extra thread <¿Nos vemos mañana?
+extra draft See you at the park at noon!
+stage
+sleep 1500
+tap Translate
+wait parque 25000
+sleep 1800
+tap parque
+sleep 2000
