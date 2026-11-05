@@ -35,7 +35,7 @@
     // New town fact sheets for hunches per day across everyone (each is one Haiku request, cached for two weeks)
     "DAILY_PACK_LIMIT": "1500",
     // Website origins that may post to the waitlist (localhost is always allowed for development)
-    "SITE_ORIGINS": "https://unicorn-site.m-vamshikrishna22.workers.dev"
+    "SITE_ORIGINS": "https://unicorn.cognovaai.com,https://unicorn-site.m-vamshikrishna22.workers.dev"
   }
   // Secrets (wrangler secret put): ANTHROPIC_API_KEY, META_API_KEY, INSTALL_HASH_SALT
 }

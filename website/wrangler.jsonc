@@ -1,5 +1,6 @@
 {
-  // The website: static files only, served by Cloudflare at unicorn-site.<account>.workers.dev.
+  // The website: static files only, served by Cloudflare at https://unicorn.cognovaai.com (and still at
+  // unicorn-site.<account>.workers.dev).
   // Deploy from this folder with `npx wrangler deploy` (the backend has its own config in ../backend).
   "$schema": "../backend/node_modules/wrangler/config-schema.json",
   "name": "unicorn-site",
@@ -11,6 +12,7 @@
   },
   // No scheduled jobs; an empty list removes any left from an earlier deploy
   "triggers": { "crons": [] },
+  "routes": [{ "pattern": "unicorn.cognovaai.com", "custom_domain": true }],
   "workers_dev": true,
   "preview_urls": false
 }

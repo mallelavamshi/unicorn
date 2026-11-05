@@ -58,7 +58,7 @@ unicorn/
 | Hunches | `backend/src/hunches/*`, `trends/Hunches.kt`, `trends/Places.kt` | Playful, labelled guesses about what the area is asking, until real trends exist. Several hundred templates filled from NWS alerts, MET Norway forecasts, a holiday calendar, the time of day, state store chains, metro teams and airports, and a per-town fact sheet that Claude Haiku writes once a fortnight (cached in KV). Dangerous weather gets a plain safety line and no jokes |
 | Consent nudges | `app/Nudges.kt`, `app/UnicornCard.kt` | The blurred Near-you peek, "See exactly what's shared" (this week's prompts run through the same signal code), and stardust: 10 a sharing day grows the Unicorn card (sparkles, wings, aurora, golden frame) |
 | App lock | `app/AppLock.kt`, `app/MainActivity.kt` | Fingerprint, face or the phone's screen lock to open the app, re-locking after a chosen time; blank in recents on Android 13+. The keys show no saved prompts or chat names over the lock screen |
-| Website | `website/` | Static landing page, blog and privacy page with live hunches and an early-access form (`POST /v1/waitlist`). Live at https://unicorn-site.m-vamshikrishna22.workers.dev |
+| Website | `website/` | Static landing page, blog and privacy page with live hunches and an early-access form (`POST /v1/waitlist`). Live at https://unicorn.cognovaai.com |
 | First-run reveal | `app/Reveal.kt` | Shown once after setup: the Unicorn hatches, a one-of-a-kind shareable Unicorn card (from the install id), a live AI rewrite demo, and what's happening nearby |
 
 **How a send is detected.** In priority order:
